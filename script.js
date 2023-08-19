@@ -1,14 +1,23 @@
-let searchform = document.querySelector('.serch-form');
+let searchForm = document.querySelector('.serch-form');
 
 document.querySelector('#search-btn').onclick = () =>
 {
-	searchform.classList.toggle('active');
+	searchForm.classList.toggle('active');
 }
 
 
-let shoppingcart = document.querySelector('.shopping-cart');
+
+let shoppingCart = document.querySelector('.shopping-cart');
 
 document.querySelector('#cart-btn').onclick = () =>
 {
-	shoppingcart.classList.toggle('active');
+	shoppingCart.classList.toggle('active');
+}
+
+
+let loginForm = document.querySelector('.login-form');
+
+document.querySelector('#login-btn').onclick = () =>
+{
+	loginForm.classList.toggle('active');
 }
