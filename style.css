@@ -42,9 +42,34 @@ body
 /*css code for banner*/
 section
 {
-	padding: 25rem 18%;
+	padding: 17rem 9%;
 
 }
+
+/* training Heading portion */
+.heading
+{
+	text-align: center;
+	padding: 2rem;
+	padding-bottom: 3.5rem;
+	font-size: 3.5rem;
+	color: var(--black);
+}
+
+.heading span{
+	background: var(--green);
+	color: #fff;
+	display: inline-block;
+	padding: .5rem 3rem;
+	clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%,0% 0%);
+
+}
+
+/* training Heading portion */
+
+
+/* botton universal code */
+
 .btn
 {
  border: .2rem solid var(--black);
@@ -243,7 +268,7 @@ section
 	border: 0px solid;
 	position: absolute;
 	top: 110%
-	right: -330%;
+	right: -110%;
 	box-shadow: var(--box-shadow);
 	padding: 2rem;
 	width: 30rem;
@@ -281,42 +306,50 @@ section
  color: var(--green);
  text-decoration: underline;
 }
-.home
+.Home
 {
 	border: 0px solid;
 	display: flex;
 	justify-content: center;
-	background: url(../image/banner.jpeg) no-repeat;
+	/*background: url(../image/banner.jpeg) no-repeat; --for image section*/
 	background-position: center;
 	background-size: cover;
-	padding-top: 25rem;
-	padding-bottom: 15rem;
+	padding-top: 17rem;
+	padding-bottom: 10rem;
 }
-.home.content
+.Home.content
 
 {
 	text-align: center;
 	width: 60rem;
 
 }
-.home .content h3
+.Home .content h3
 {
 	color: var(--black);
 	font-size: 3rem;
 }
-.home .content h3 span
+.Home .content h3 span
 {
 	color: var(--green);
 }
-.home .content p
+.Home .content p
 {
 	color: var(--light-color);
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 	padding: 1rem 0;
-	line-height: 1.8;
+	
+
+	line-height: 1.1;
 }
 
-
+/*features*/
+.features .box-container
+{
+ 
+ dispaly: grid;
+ grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
 
 
 
@@ -423,7 +456,7 @@ section
 
   html
   {
-     font-size: 50%;
+     font-size: 2.5rem;
   }
 
 }
