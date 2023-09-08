@@ -1,181 +1,430 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Zortea Consultancy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zortea Consultancy</title>
 
-<!-- Code for font awesome cdn -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--Code for font awesome cdn-->
+    <!-- Code for font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Code for font awesome cdn -->
 
-<!-- Code for linking css file -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- Code for linking css file -->
+    <!-- Code for linking css file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Code for linking css file -->
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 <!-- Header Section -->
- <header class="header">
- 	<a href="#" class="logo"><img src="image/logo.jpeg"></a>
- 
+<header class="header">
+    <a href="#" class="logo"><img src="image/logo.jpeg"></a>
 
     <!-- Code for Navigation bar -->
     <nav class="navbar">
-    	 <a href="#Home">Home</a>
-         <a href="#Training">Training</a>
-         <a href="#Placement">Placement</a>
-         <a href="#Affiliated College">Affiliated College</a>
-         <a href="#Blogs">Blogs</a>
-         <a href="#Community">Community</a
+        <a href="#Home">Home</a>
+        <a href="#Training">Training</a>
+        <a href="#Placement">Placement</a>
+        <a href="#Affiliated College">Affiliated College</a>
+        <a href="#Blogs">Blogs</a>
+        <a href="#Community">Community</a>
     </nav>
 
     <div class="icons">
-    	<div class="fa fa-bars" id="menu-btn"></div>
-    	<div class="fa fa-search" id="search-btn"></div>
-    	<div class="fa fa-shopping-cart" id="cart-btn"></div>
-    	<div class="fa fa-user" id="login-btn"></div>
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div class="fa fa-search" id="search-btn"></div>
+        <div class="fa fa-shopping-cart" id="cart-btn"></div>
+        <div class="fa fa-user" id="login-btn"></div>
     </div>
 
     <form class="search-form">
-    	<input type="search" id="search-box" placeholder="Search Here.......">
-    	<label for="search-box" class="fa fa-search"></label>
+        <input type="search" id="search-box" placeholder="Search Here.......">
+        <label for="search-box" class="fa fa-search"></label>
     </form>
-
-
-
-
-
-
-<div class="shopping-cart">
-	<div class="box">
-		<i class="fa fa-trash"> </i>
-		<img src="image/phyton.jpg">
-		<div class="content">
-			<h3>Phyton Training</h3>
-			<span class="price">$5.99/-</span>
-			<span class="quantity">Qty : 1</span>
-		</div>
-	</div>
-</div>
-
-
-
-<div class="shopping-cart">
-	<div class="box">
-		<i class="fa fa-trash"> </i>
-		<img src="image/HR.png">
-		<div class="content">
-			<h3>HR Training</h3>
-			<span class="price">$3.99/-</span>
-			<span class="quantity">Qty : 1</span>
-		</div>
-	</div>
-</div>
-
-
-<div class="shopping-cart">
-	<div class="box">
-		<i class="fa fa-trash"> </i>
-		<img src="image/java.jpg">
-		<div class="content">
-			<h3>Core Java Training</h3>
-			<span class="price">$7.99/-</span>
-			<span class="quantity">Qty : 1</span>
-		</div>
-	</div>
-
-	<div class="total"> total : $18.97/- </div>
-	<a href="#" class="btn"> Checkout</a>
-</div>
-
-<form action="#" class="login-form">
-	<h3>login-now</h3>
-	<input type="email" placeholder="Enter your Email" class="box">
-	<input type="password" placeholder="Enter your password" class="box">
-
-
-	<p> Forgot Your Password <a href="#"> Click here </a></p>
-	<p> Don't Have an Account <a href="#"> Create Now </a></p>
-
-	<input type="submit" value="Login Now" class="btn">
-
-</form>
-
-
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fa fa-trash"> </i>
+            <img src="image/phyton.jpg">
+            <div class="content">
+                <h3>Phyton Training</h3>
+                <span class="price">$5.99/-</span>
+                <span class="quantity">Qty : 1</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fa fa-trash"> </i>
+            <img src="image/HR.png">
+            <div class="content">
+                <h3>HR Training</h3>
+                <span class="price">$3.99/-</span>
+                <span class="quantity">Qty : 1</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fa fa-trash"> </i>
+            <img src="image/java.jpg">
+            <div class="content">
+                <h3>Core Java Training</h3>
+                <span class="price">$7.99/-</span>
+                <span class="quantity">Qty : 1</span>
+            </div>
+        </div>
+    
+        <div class="total"> total : $18.97/- </div>
+        <a href="#" class="btn"> Checkout</a>
+    </div>
+    
+    <form action="#" class="login-form">
+        <h3>login-now</h3>
+        <input type="email" placeholder="Enter your Email" class="box">
+        <input type="password" placeholder="Enter your password" class="box">
+    
+    
+        <p> Forgot Your Password <a href="#"> Click here </a></p>
+        <p> Don't Have an Account <a href="#"> Create Now </a></p>
+    
+        <input type="submit" value="Login Now" class="btn">
+        </form>
     <!-- Code for Navigation bar -->
 </header>
-
-
 <!-- Header Section -->
 
 <!-- Banner Section -->
 <section class="Home" id="Home">
-	<div class="content">
-		<h3>Learn <span>without</span> limits</h3>
-		<p>Start, switch, or advance your career with more than 5,800 courses, Professional</p>
-		 <p>Certificates, and degrees from world-class universities and companies.</p>
-
-		<a href="#" class="btn">Join Now</a>
+    <div class="content">
+        <h3>Learn <span>without</span> limits</h3>
+        <p>Start, switch, or advance your career with more than 5,800 courses, Professional</p>
+        <p>Certificates, and degrees from world-class universities and companies.</p>
+        <a href="#" class="btn">Join Now</a>
     </div>
-</section>    
- 
-
-
-
+</section>
 <!-- Banner Section -->
 
 <!-- Training Section -->
 <section class="Training" id="Training">
-	<h1 class=heading"> our <span>Training</span></h1>
+    <h1 class="heading"> our <span>Training</span></h1>
+    
+    <div class="box-container center">
+
+    <div class="box-container">
+        <div class="box">
+            <img src="image/java.jpeg">
+            <h1>Project Oriented Training By Expert</h1>
+            <p> Lessons on Web Development are taught by Instructors from major universities</p>
+            <p> specializing in Computer Science, Engineering, and other departments.</p>
+            <p> Lessons are administered via video lectures, readings, quizzes, hands-on projects, and more.</p>
+            <a href="#" class="btn"> read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/phyton.jpeg">
+            <h1>Project Oriented Training By Expert</h1>
+            <p> Lessons on Web Development are taught by Instructors from major universities</p>
+            <p> specializing in Computer Science, Engineering, and other departments.</p>
+            <p> Lessons are administered via video lectures, readings, quizzes, hands-on projects, and more.</p>
+            <a href="#" class="btn"> read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/HR.jpeg">
+            <h1>Project Oriented Training By Expert</h1>
+            <p> Lessons on Web Development are taught by Instructors from major universities</p>
+            <p> specializing in Computer Science, Engineering, and other departments.</p>
+            <p> Lessons are administered via video lectures, readings, quizzes, hands-on projects, and more.</p>
+            <a href="#" class="btn"> read more</a>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- Training Section -->
+<!-- Placement Section -->
+<section class="Placement" id="Placement">
+    <div class="placement-container">
+        <div class="content">
+            <h1 class="heading">Placement <span>Sessions</span></h1>
+            
+            <div class="placement-session">
+                <div class="session-item">
+                    <h2>Session 1: Resume Building</h2>
+                    <p>Learn how to create an impressive resume that stands out to employers.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+    
+                <div class="session-item">
+                    <h2>Session 2: Interview Techniques</h2>
+                    <p>Master interview skills and techniques to excel in job interviews.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+    
+                <div class="session-item">
+                    <h2>Session 3: Job Search Strategies</h2>
+                    <p>Discover effective job search strategies and tools to find the right job.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Placement Section -->
+
+<!--our Affiliated College-->
+<section class="Affiliated College" id="categories">
+    <h1 class="heading"> Affiliated <span>College</span> </h1>
+    <div class="box-container">
+    <div class="box">
+        <img src="image/cart-1.png">
+        <h3> Amity</h3>
+        <p> Upto 45% Off</p>
+        <a href="#" class="btn">Review</a>
+    </div>
+
+    <div class="box">
+        <img src="image/cart-1.png">
+        <h3> Amity</h3>
+        <p> Upto 45% Off</p>
+        <a href="#" class="btn">Review</a>
+    </div>
 
 
+    <div class="box">
+        <img src="image/cart-1.png">
+        <h3> Amity</h3>
+        <p> Upto 45% Off</p>
+        <a href="#" class="btn">Review</a>
+    </div>
 
-	<div class="box-container">
-		<div class="box">
-			<img src="image/java.jpeg">
-			<h3>Project Oriented Training By Expert</h3>
+    <div class="box">
+        <img src="image/cart-1.png">
+        <h3> Amity</h3>
+        <p> Upto 45% Off</p>
+        <a href="#" class="btn">Review</a>
+    </div>
+</div>
+</section>
 
-			<p> Lessons on Web Development are taught by Instructors from major universities</p>
-			<p> specializing in Computer Science, Engineering, and other departments.</p>
-			<p> Lessons are administered via video lectures, readings, quizzes, hands-on projects, and more.</p>
+<!-- Review section-->
+<section class="review" id="review">
+    <h1 class="heading"> Customer's <span>Review</span></h1>
+    <div class="box-container">
+            <div class="box">
+        <img src="image/cart-1.png">
+        <h3>sohan</h3>
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+      </div>
 
-			<a href="#" class="btn"> read more</a>
-		</div>
+        <p> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+        <a href="#" class="btn">Review</a>
+    </div>
+       
+           <div class="box">
+        <img src="image/cart-1.png">
+        <h3> Yash</h3>
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+      </div>
+        <p> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+        <a href="#" class="btn">Review</a>
+    </div>
+   
+         <div class="box">
+        <img src="image/cart-1.png">
+        <h3> ankit</h3>
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+      </div>
+        <p> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+        <a href="#" class="btn">Review</a>
+    </div>
+
+    <div class="box">
+        <img src="image/cart-1.png">
+        <h3> Amity</h3>
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+      </div>
+        <p> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+        <a href="#" class="btn">Review</a>
+    </div>
+
+        <div class="box">
+        <img src="image/cart-1.png">
+        <h3> Rohan</h3>
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half"></i>
+      </div>
+        <p> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+        <a href="#" class="btn">Review</a>
+    </div>
 
 
-		<div class="box">
-			<img src="image/phyton.jpeg">
-			<h3>Project Oriented Training By Expert</h3>
-
-			<p> Lessons on Web Development are taught by Instructors from major universities</p>
-			<p> specializing in Computer Science, Engineering, and other departments.</p>
-			<p> Lessons are administered via video lectures, readings, quizzes, hands-on projects, and more.</p>
-
-			<a href="#" class="btn"> read more</a>
-		</div>
-
-
-		<div class="box">
-			<img src="image/HR.jpeg">
-			<h3>Project Oriented Training By Expert</h3>
-
-			<p> Lessons on Web Development are taught by Instructors from major universities</p>
-			<p> specializing in Computer Science, Engineering, and other departments.</p>
-			<p> Lessons are administered via video lectures, readings, quizzes, hands-on projects, and more.</p>
-
-			<a href="#" class="btn"> read more</a>
-		</div>
-	</div>
+    </div>
 </section>
 
 
 
 
 
+<!-- Review section-->
+
+
+
+<!-- Blogs section-->
+
+<section class="blogs" id="blogs">
+    <h1 classs="heading"> Our<span>Blogs</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="image/blog-1.jpg">
+            <div class=""content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"></i> By User</a>
+                    <a href="#"><i class="fa fa-calendar"></i> 1st May, 2021</a>
+                </div>
+                <h3>What is Lorem Ipsum?</h3>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="btn"> Read-More </a>
+                </div>
+            </div>
+        </div>
+
+        div class="box">
+            <img src="image/blog-1.jpg">
+            <div class=""content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"></i> By User</a>
+                    <a href="#"><i class="fa fa-calendar"></i> 1st May, 2021</a>
+                </div>
+                <h3>What is Lorem Ipsum?</h3>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="btn"> Read-More </a>
+                </div>
+            </div>
+        </div>
+
+
+        div class="box">
+            <img src="image/blog-1.jpg">
+            <div class=""content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"></i> By User</a>
+                    <a href="#"><i class="fa fa-calendar"></i> 1st May, 2021</a>
+                </div>
+                <h3>What is Lorem Ipsum?</h3>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="btn"> Read-More </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Blogs section-->
+
+
+
+<!-- Community section-->
+
+
+
+
+
+
+<!-- Community section-->
+
+
+
+
+
+<!-- footer section-->
+  <section class="footer">
+      <div class="box-container">
+        <div class="box">
+            <h3> Zortea Consultancy</h3>
+            <p>Feel Free To Follow Us On Our Social Media Handlers All The Links Are Given Below</p>
+
+            <div class="share">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="box">
+            <h3> Contact Info </h3>
+                <a href="#" class="links"> <i class="fa fa-phone"></i> +91 923345557</a>
+                <a href="#" class="links"> <i class="fa fa-phone"></i> +91 923345557</a>
+                <a href="#" class="links"> <i class="fa fa-envelope"></i>info@example</a>
+                <a href="#" class="links"> <i class="fa fa-map-marker"></i> Lucknow-india</a>
+         </div>
+    
+
+
+
+        <div class="box">
+            <h3> Quick Links </h3>
+
+            
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>Home</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>Training</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>Placement</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>Affiated College</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>Blogs</a>
+                <a href="#" class="links"> <i class="fa fa-arrow-right"></i>Community</a>
+
+
+
+            </div>
+        
+
+
+        <div class="box">
+            <h3> Newsletter</h3>
+            <p> Subscribe for Latest Update</p>
+            <input type="email" placeholder="Your Email" class="email">
+            <input type="submit" value="Subscribe" class="btn">
+        </div>
+    </div>
+  </section>
 
 
 
@@ -188,7 +437,12 @@
 
 
 
-<!-- Training Section -->
+
+
+
+
+
+<!-- Blogs section-->
 
 
 
@@ -202,10 +456,16 @@
 
 
 
+
+
+
+
+
+
+
+<!--our Affiliated College-->
 
 
 <script src="js/script.js"></script>
-
-
 </body>
 </html>
