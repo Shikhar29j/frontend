@@ -2,14 +2,13 @@
 
 :root
 {
-    --green: green;
+    --green: rgb(211, 24, 24);
     --black: #130f40;
     --light-color: #666;
-    --box-shadow: 0 .5rem 1rem rgba(0,0,0.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     --border: 1rem solid rgba(0,0,0.1);
     --outline: 1rem solid rgba(0,0,0.1);
 }
-
 
 *{
 
@@ -45,7 +44,7 @@ section
 
 }
 
-/* training Heading portion */
+/* training portion */
 .heading
 {
     text-align: center;
@@ -63,8 +62,53 @@ section
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%,0% 0%);
 
 }
+.Training .box-container
+{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
 
-/* training Heading portion */
+.Training .box-container .box
+{
+    border: 0px solid red;
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+}
+
+.Training .box-container .box:hover
+{
+    box-shadow: 1px 1px 10px 4px var(--green);
+}
+.Training .box-container .box img
+{
+    margin: 1rem 0;
+    height: 15rem;
+
+}
+.Training .box-container .box h1
+{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+.Training .box-container .box p
+{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+
+
+
+
+/* training  portion */
 
 /* botton universal code */
 
@@ -347,12 +391,36 @@ section
     flex-direction: column; /* To align the content vertically */
 }
 
-/*features*/
-.Placement .box-container {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 80px,30px;
+    box-shadow: 0 0 9px rgba(0,0,0 .6);
 }
-
+.about-item i{
+    font-size: 43px;
+    margin: 0;
+}
+.about-item h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.about-item hr{
+    width: 46px;
+    height: 3px;
+    background-color: #5fbff9;
+    margin: 0 auto;
+    border: none;
+}
+.about-item p 
+{
+     margin-top: 20px;
+}
+.about-item:hover
+{
+    background-color: var(--green);
+}
 /*.affiliated college*/
 .Affiliated College .box-container
 {
@@ -395,56 +463,170 @@ section
 
 
 
+/* Topic Of Internship */
+.service-section{
+    padding: 50px 0;
+    color: #202020;
+} 
+.service-section .container{
+    max-width: 1240px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service-section .title
+{
+    color: var(--black);
+    position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.service-section .title span
+{
+    color: var(--green);
+}
+.service-section .title:before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 140px;
+    height: 3px;
+}
+.service-section .title:after{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 140px;
+    height: 3px;
+
+}
+.service-section .description{
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #6f6f71;
+    font-weight: 600;
+    text-align: center;
+}
+.service-section .service-column
+{
+    max-width: 33.3333333%;
+    padding: 0 15px;
+    display: grid;
+}
+.service-section .service-column .single-service
+{
+    position: relative;
+    margin-top: 30px;
+    border-radius: 0;
+    padding: 40px 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+}
+.service-section .service-column .single-service .content
+{
+    position: relative;
+    z-index: 20;
+}
+.service-section .service-column .single-service .content .icon 
+{
+    display: inline-block;
+    margin-bottom: 25px;
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    line-height: 70px;
+    text-align: center;
+    color: var(--black);
+    font-size: 30px;
+    transition: all 0.5s;
+}
+.service-section .service-column .single-service .content .title{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 23px;
+    color: var(--green);
+    transition: color 0.3s;
+}
+.service-section .service-column .single-service .content .description{
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    position: relative;
+    font-weight: 500;
+    transition: color .3s;
+
+}
+
+.service-section .service-column .single-service .content .learn-more{
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-weight: 500;
+    transition: color .3s;
+}
+.service-section .service-column .single-service .content .learn-more:after
+{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ff4500;
+    transition: background-color .3s;
+}
 
 
 
 
 
+/* Topic Of Internship */
 
 
 
+/* Empanelled Companies */
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 7));
+    }
+}
+.slider{
+    height: 100px;
+    margin:auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
 
+.slider .slide-track
+{
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.slider .slide{
+    height: 100px;
+    width: 250px;
+}
 
 /*media queires */
 @media (max-width:991px)
 {
 
-  html
+  .html
   {
      font-size: 55%;
   }
@@ -453,7 +635,7 @@ section
   {
     padding: 2rem;
   }
-  section
+  .section
   {
     padding: 2rem;
   }
@@ -499,27 +681,157 @@ section
 
 }
 
-.box-container .box p {
+.box-container .box p 
+
+
+
+
+
+
+
+
+
+
+
+
+{
     font-size: 18px; 
 }
-.placement-container {
+.placement-container{
     display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
-    height: 100vh; /* Adjust the height as needed for your design */
-}
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
 
 /* Additional CSS for styling */
-.Placement {
-    background-color: #f2f2f2; /* Add a background color or adjust as needed */
-    padding: 20px; /* Add padding for spacing */
-    text-align: center; /* Center-align text within the section */
+.Industrial Internship
+ {
+    background-color:#eee ; 
+    padding: 20px; 
+    text-align: center;
 }
 
-.placement-session {
+.Industrial Internship-session 
+{
     display: flex;
-    justify-content: space-between; /* Adjust as needed */
-    max-width: 800px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center-align placement session items horizontally */
+    justify-content: space-between; 
+    max-width: 800px; 
+    margin: 0 auto;
+}
 }
 
+.session-item {
+    margin-right: 20px; 
+}
+
+.session-item:last-child {
+    margin-right: 0;
+}
+
+.company-list {
+    font-size: 15px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Customer Review */
+
+
+/* Customer Review */
+
+.wrapper{
+    margin-top: 10%;
+}
+
+.wrapper h1{
+    font-family:'Allura', cursive;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.review{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.review .review-member
+{
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+}
+.review .review-member h3
+{
+    color: var(--green);
+    font-size: 26px;
+    margin-top: 50px;
+}
+.review .review-member .review-image
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateX( 50%);
+    background: #fff;
+
+}
+.review .review-member .review-image .image
+{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Customer Review */
+
+
+
+
+}
+/* Styling for the footer boxes */
+.box {
+    padding: 20px;
+    text-align: left;
+}
+
+.box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.links {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Additional styling as needed for email input and subscribe button */
+.email {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #fff;
+    color: #110e0e;
+    text-align: center;
+    padding: 10px 0;
+}
